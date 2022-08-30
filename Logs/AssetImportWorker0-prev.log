@@ -1,0 +1,371 @@
+Unity Editor version:    2021.3.8f1 (b30333d56e81)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 11.6.8 (Build 20G730)
+Darwin version:          20.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        32768 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/dan.eliyahu/UnityProjects/SkyRoads/SkyRoads
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50430
+Successfully changed project path to: /Users/dan.eliyahu/UnityProjects/SkyRoads/SkyRoads
+/Users/dan.eliyahu/UnityProjects/SkyRoads/SkyRoads
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 97.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/dan.eliyahu/UnityProjects/SkyRoads/SkyRoads/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: AMD Radeon Pro 5300M (high power)
+Metal devices available: 2
+0: AMD Radeon Pro 5300M (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 5300M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5300M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56595
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001416 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 91.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Domain Reload Profiling:
+	ReloadAssembly (808ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (561ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (149ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (319ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (92ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (162ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005674 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/dan.eliyahu/UnityProjects/SkyRoads/SkyRoads/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/dan.eliyahu/UnityProjects/SkyRoads/SkyRoads/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.276 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1277ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1003ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (365ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (431ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (297ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3377 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (94.4 KB). Loaded Objects now: 3834.
+Memory consumption went from 230.4 MB to 230.3 MB.
+Total: 3.818486 ms (FindLiveObjects: 0.293648 ms CreateObjectMapping: 0.233907 ms MarkObjects: 3.164930 ms  DeleteObjects: 0.124955 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 19746.564031 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.006488 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004985 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/dan.eliyahu/UnityProjects/SkyRoads/SkyRoads/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/dan.eliyahu/UnityProjects/SkyRoads/SkyRoads/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.254 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1255ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (967ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (379ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (257ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'Game/Planet': fallback shader 'Game/Planet (Lower Quality)' not found
+Refreshing native plugins compatible for Editor in 1.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (1.5 MB). Loaded Objects now: 3839.
+Memory consumption went from 232.5 MB to 231.0 MB.
+Total: 3.756280 ms (FindLiveObjects: 0.262493 ms CreateObjectMapping: 0.191334 ms MarkObjects: 2.658624 ms  DeleteObjects: 0.642807 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 38.459333 seconds.
+  path: Assets/Template
+  artifactKey: Guid(e3e5e4f524df42d7bbc21961c7561fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template using Guid(e3e5e4f524df42d7bbc21961c7561fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78bf174d36f8a445f3e6fa3e4ffd2e8') in 0.006847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.324592 seconds.
+  path: Assets/Template/Entities
+  artifactKey: Guid(c01738a467d01144ca9dfefa07f2cd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities using Guid(c01738a467d01144ca9dfefa07f2cd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4cfb8f83aeb7e3094d77e3fce095bc') in 0.001340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.663339 seconds.
+  path: Assets/Template/Entities/Asteroid
+  artifactKey: Guid(02400b34928384642917225d10c13200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Asteroid using Guid(02400b34928384642917225d10c13200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d063837d4d569921dc7fa269e8a6c5') in 0.001118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.071583 seconds.
+  path: Assets/Template/Entities/Asteroid/Asteroid - Bump.tga
+  artifactKey: Guid(a623ad04b0e4d2346b6ffedd67be0f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Asteroid/Asteroid - Bump.tga using Guid(a623ad04b0e4d2346b6ffedd67be0f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29ce75ccda5dbf604db66f5552a1b94') in 2.024846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Template/Entities/Asteroid/Asteroid.FBX
+  artifactKey: Guid(42e0e47738a42fc42a99fb8d6aaf3f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Asteroid/Asteroid.FBX using Guid(42e0e47738a42fc42a99fb8d6aaf3f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46e80a0f22206ca10dc288c0c9de300a') in 1.956919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.183222 seconds.
+  path: Assets/Template/Entities/Planet
+  artifactKey: Guid(e9fbfcdcab920774dbaf52940d8f37d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Planet using Guid(e9fbfcdcab920774dbaf52940d8f37d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870cbca045c02f214f84f0e39e7f6443') in 0.001118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.135212 seconds.
+  path: Assets/Template/Entities/Planet/Atmosphere.mat
+  artifactKey: Guid(b2483d16904c4524e8349c5f6d7302d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Planet/Atmosphere.mat using Guid(b2483d16904c4524e8349c5f6d7302d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef2d6db02ca5283042e34f8b80563eb9') in 0.613177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002309 seconds.
+  path: Assets/Template/Entities/Planet/Noise.png
+  artifactKey: Guid(248ac1f576ea4d344afd0c28aa2e231f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Planet/Noise.png using Guid(248ac1f576ea4d344afd0c28aa2e231f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90394554f376399e3b1149f8745913e8') in 0.919399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Template/Entities/Planet/Planet.mat
+  artifactKey: Guid(49fead1840d8f3c40b051c259401a77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Planet/Planet.mat using Guid(49fead1840d8f3c40b051c259401a77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903f55fa634e707686f4659cf23966bc') in 0.395501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Template/Entities/Planet/Planet.prefab
+  artifactKey: Guid(4319d9e04010d3e4e872da9c074a632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Planet/Planet.prefab using Guid(4319d9e04010d3e4e872da9c074a632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9264077e6d39cf27df7c538722ed84c0') in 0.232570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Template/Entities/Planet/Planet.tga
+  artifactKey: Guid(a1b3a78afb899ae4b92db57e7b9d123f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Planet/Planet.tga using Guid(a1b3a78afb899ae4b92db57e7b9d123f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ad49acb3f2cb277eef04f94da5c982') in 0.015575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.361065 seconds.
+  path: Assets/Template/Entities/Spaceship/Spaceship_DG.tga
+  artifactKey: Guid(592fd6e545034244aa3f4e2143c8e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Spaceship/Spaceship_DG.tga using Guid(592fd6e545034244aa3f4e2143c8e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f416998bce10a039229fac810dbb5b8') in 0.008810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.818230 seconds.
+  path: Assets/Template/Entities/Spaceship/Materials/Spaceship_NS.mat
+  artifactKey: Guid(4f6889ff19d3c42c1b31652128b8e192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Entities/Spaceship/Materials/Spaceship_NS.mat using Guid(4f6889ff19d3c42c1b31652128b8e192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2ffffba01905e48f721c6fb551faf8') in 0.010972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.352986 seconds.
+  path: Assets/Template/Textures/Environment/Skybox/Blue - Bottom.png
+  artifactKey: Guid(32d0b7b14b377044980a9fbac0628776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/Environment/Skybox/Blue - Bottom.png using Guid(32d0b7b14b377044980a9fbac0628776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14aa186d2ece4b285a917764ef45745e') in 0.016641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Template/Textures/Environment/Skybox/Blue - Right.png
+  artifactKey: Guid(65522d2b938bcc444bcac0d995db2d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/Environment/Skybox/Blue - Right.png using Guid(65522d2b938bcc444bcac0d995db2d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd51a0d88be06e8377627fc7bcfa521') in 0.016043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Template/Textures/FX/Thruster - Glow.png
+  artifactKey: Guid(9fd0803556af44591a2d3be1bd49a003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/FX/Thruster - Glow.png using Guid(9fd0803556af44591a2d3be1bd49a003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '895a2d8e66f4e3076de91004c6733807') in 0.008439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Template/Textures/Environment/Skybox/Blue - Top.png
+  artifactKey: Guid(14e7cdc1e0467554aacca57b4d8a1750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/Environment/Skybox/Blue - Top.png using Guid(14e7cdc1e0467554aacca57b4d8a1750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa34af2b3f66933d77521d4c79ede4d') in 0.015292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Template/Textures/Environment/Road/sci_fi_002_Diffuse.tga
+  artifactKey: Guid(a2acd5db4b23dcc4d8e37abba17649af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/Environment/Road/sci_fi_002_Diffuse.tga using Guid(a2acd5db4b23dcc4d8e37abba17649af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42786b8089cc2fffcf0c06af04c6fb25') in 0.011664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Template/Textures/FX/Thruster - Maneuver.tga
+  artifactKey: Guid(51d4863c72b485643b36bed83172bded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/FX/Thruster - Maneuver.tga using Guid(51d4863c72b485643b36bed83172bded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702d6ef170b711969be0f7450786af99') in 0.009723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Template/Textures/FX/Thruster - Exhaust.psd
+  artifactKey: Guid(01c076476afe04100adbd59a58e337eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/FX/Thruster - Exhaust.psd using Guid(01c076476afe04100adbd59a58e337eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebaa5f51ca6d444c0c1aeeb7e8ac45df') in 1.591616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005343 seconds.
+  path: Assets/Template/Textures/Environment/Road/sci_fi_002_Normal.tga
+  artifactKey: Guid(587f00226871d634699b3ed679a02e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/Environment/Road/sci_fi_002_Normal.tga using Guid(587f00226871d634699b3ed679a02e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15274f641fd134b7f6fc7a463bf814be') in 0.012598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Template/Textures/Environment/Skybox/Blue - Left.png
+  artifactKey: Guid(3e15376808be51d4382a510a763c3db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/Environment/Skybox/Blue - Left.png using Guid(3e15376808be51d4382a510a763c3db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2437847e923c005771b15a29fa3a4c') in 0.014158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Template/Textures/Environment/Road/sci_fi_002_Specular.tga
+  artifactKey: Guid(fa6721dc812dae74cbe3fbb47529c3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Textures/Environment/Road/sci_fi_002_Specular.tga using Guid(fa6721dc812dae74cbe3fbb47529c3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c34521e875fd7d55ef3b0cf8b52b87') in 0.010805 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
