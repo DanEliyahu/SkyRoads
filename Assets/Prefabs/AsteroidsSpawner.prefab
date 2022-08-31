@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610258434173593016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 200}
+  m_LocalPosition: {x: 0, y: 1.5, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81,7 +81,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 610258434173593023}
   _horizontalBoundary: 4
   _startSpawnDelay: 2
-  _endSpawnDelay: 0.5
+  _endSpawnDelay: 0.3
   _timeToReachEndDelay: 20
 --- !u!114 &610258435211307132
 MonoBehaviour:
