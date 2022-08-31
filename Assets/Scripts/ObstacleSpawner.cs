@@ -20,12 +20,10 @@ namespace JellyButton
         private void Start()
         {
             _objectPooler = FindObjectOfType<GameManager>().ObjectPooler;
-            _shouldSpawn = true;
             _spawnDelay = _startSpawnDelay;
-            StartCoroutine(SpawnObstacles());
         }
 
-        void Update()
+        private void Update()
         {
             if (_shouldSpawn && !Mathf.Approximately(_spawnDelay, _endSpawnDelay))
             {
@@ -43,6 +41,17 @@ namespace JellyButton
                 _objectPooler.SpawnFromPool(_obstacleType, spawnPosition, Quaternion.identity);
                 yield return new WaitForSeconds(_spawnDelay);
             }
+        }
+
+        public void StartSpawning()
+        {
+            _shouldSpawn = true;
+            StartCoroutine(SpawnObstacles());
+        }
+
+        public void StopSpawning()
+        {
+            _shouldSpawn = false;
         }
     }
 }

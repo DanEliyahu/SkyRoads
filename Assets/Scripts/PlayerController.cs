@@ -17,10 +17,13 @@ namespace JellyButton
         [SerializeField] private float _tiltSpeed = 60f;
 
         [Header("Boost")] 
-        [SerializeField] private float _boostMultiplier = 2f;
+        [SerializeField] private float _boostSpeedMultiplier = 2f;
         [SerializeField] private float _boostDuration = 1f;
         public UnityEvent _onBoostStart;
         public UnityEvent _onBoostEnd;
+
+        [Header("OnDestroyed")] 
+        public UnityEvent _onPlayerDestroyed;
 
 
         private Rigidbody _rigidbody;
@@ -28,7 +31,7 @@ namespace JellyButton
         private bool _canBoost = true;
         private bool _startBoost;
 
-        private void Awake()
+        private void Start()
         {
             _rigidbody = GetComponent<Rigidbody>();
             _rigidbody.velocity = Vector3.forward * _forwardSpeed;
@@ -74,7 +77,7 @@ namespace JellyButton
 
         private IEnumerator StartBoost()
         {
-            _rigidbody.velocity = _forwardSpeed * _boostMultiplier * Vector3.forward;
+            _rigidbody.velocity = _forwardSpeed * _boostSpeedMultiplier * Vector3.forward;
             _canBoost = false;
             _onBoostStart?.Invoke();
 
@@ -89,6 +92,7 @@ namespace JellyButton
         public void Destroy()
         {
             gameObject.SetActive(false);
+            _onPlayerDestroyed?.Invoke();
         }
     }
 }

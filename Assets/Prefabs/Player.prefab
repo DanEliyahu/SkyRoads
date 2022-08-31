@@ -9698,7 +9698,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8161082224843483731}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2afd2a0535374814a950ce8a3408767, type: 3}
   m_Name: 
@@ -9708,12 +9708,15 @@ MonoBehaviour:
   _horizontalMovementBoundary: 4
   _maxHorizontalTilt: 45
   _tiltSpeed: 200
-  _boostMultiplier: 2
+  _boostSpeedMultiplier: 2
   _boostDuration: 2
   _onBoostStart:
     m_PersistentCalls:
       m_Calls: []
   _onBoostEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  _onPlayerDestroyed:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &8272275494998454604
