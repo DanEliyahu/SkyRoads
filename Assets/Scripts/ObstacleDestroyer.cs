@@ -17,6 +17,7 @@ namespace JellyButton
             {
                 other.gameObject.SetActive(false);
                 _gameManager.AddToScore(other.GetComponent<Obstacle>().ScoreWhenPassed);
+                _gameManager.IncrementNumberOfAsteroidsPassed();
             }
         }
     }

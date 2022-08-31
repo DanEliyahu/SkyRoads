@@ -15,4 +15,4 @@ MonoBehaviour:
   _pools:
   - _tag: 0
     _prefab: {fileID: 2616278236133768338, guid: 2ca0a5ccadee14709ad0f49108152bc8, type: 3}
-    _size: 20
+    _size: 40

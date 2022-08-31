@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace JellyButton
 {
@@ -9,17 +10,20 @@ namespace JellyButton
         [SerializeField] private ObjectPoolsData _objectPoolsData;
         [SerializeField] private int _scorePerSecond = 1;
         [SerializeField] private int _scorePerSecondWhenBoosting = 2;
+        [SerializeField] private GameplayCanvasView _gameplayCanvasView;
+        [SerializeField] private GameOverCanvasView _gameOverCanvasView;
         public UnityEvent _onGameStarted;
+        public UnityEvent _onGameOver;
 
         public ObjectPooler ObjectPooler { get; private set; }
 
         private int _score;
+        private int _highScore;
         private int _currentScorePerSecond;
         private int _passedObstacles;
         private int _playingTimeInSeconds;
         private bool _hasGameStarted;
         private bool _isGameOver;
-        private float _startTime;
 
         private const string HIGH_SCORE_KEY = "highscore";
 
@@ -41,9 +45,18 @@ namespace JellyButton
 
         private void StartGame()
         {
+            _highScore = PlayerPrefs.GetInt(HIGH_SCORE_KEY, 0);
+            InitializeUI();
             StartCoroutine(IncrementScorePerSecond());
             _onGameStarted?.Invoke();
-            _startTime = Time.time;
+        }
+
+        private void InitializeUI()
+        {
+            _gameplayCanvasView.SetTimeText(_playingTimeInSeconds);
+            _gameplayCanvasView.SetAsteroidsPassedText(_passedObstacles);
+            _gameplayCanvasView.SetScoreText(_score);
+            _gameplayCanvasView.SetHighScoreText(_highScore);
         }
 
         private IEnumerator IncrementScorePerSecond()
@@ -51,8 +64,19 @@ namespace JellyButton
             while (!_isGameOver)
             {
                 yield return new WaitForSeconds(1f);
+
                 _score += _currentScorePerSecond;
+                UpdateScoreTexts();
+
+                _playingTimeInSeconds++;
+                _gameplayCanvasView.SetTimeText(_playingTimeInSeconds);
             }
+        }
+
+        private void UpdateScoreTexts()
+        {
+            _gameplayCanvasView.SetScoreText(_score);
+            _gameplayCanvasView.SetHighScoreText(Mathf.Max(_score, _highScore));
         }
 
         public void SetBoostScoreMode(bool value)
@@ -63,22 +87,40 @@ namespace JellyButton
         public void AddToScore(int amount)
         {
             _score += amount;
+            UpdateScoreTexts();
+        }
+
+        public void IncrementNumberOfAsteroidsPassed()
+        {
+            _passedObstacles++;
+            _gameplayCanvasView.SetAsteroidsPassedText(_passedObstacles);
         }
 
         public void GameOver()
         {
             _isGameOver = true;
             SetHighScore();
-            var timePlayedInSeconds = Mathf.FloorToInt(Time.time - _startTime);
+            InitializeGameOverUI();
+            _onGameOver?.Invoke();
         }
 
         private void SetHighScore()
         {
-            var highScore = PlayerPrefs.GetInt(HIGH_SCORE_KEY, 0);
-            if (highScore < _score)
+            PlayerPrefs.SetInt(HIGH_SCORE_KEY, Mathf.Max(_score, _highScore));
+        }
+
+        private void InitializeGameOverUI()
+        {
+            _gameOverCanvasView.SetTexts(_playingTimeInSeconds, _passedObstacles, _score);
+            if (_score > _highScore)
             {
-                PlayerPrefs.SetInt(HIGH_SCORE_KEY, _score);
+                _gameOverCanvasView.SetBrokenHighScoreTextActive();
             }
+        }
+
+        public void RestartGame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
